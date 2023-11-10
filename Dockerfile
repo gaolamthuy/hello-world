@@ -1,11 +1,16 @@
-FROM node:12.16.1-alpine
+# FROM node:12.16.1-alpine
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY package.json package.json
+# COPY package.json package.json
 
-RUN npm install
+# RUN npm install
 
-COPY . .
+# COPY . .
 
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+
+# syntax=docker/dockerfile:1
+FROM alpine
+RUN --mount=type=secret,id=github_token \
+    cat /run/secrets/github_token
