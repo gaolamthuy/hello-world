@@ -29,7 +29,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/gaolamthuy/gaolamthuy-helloworld:latest
-            ghcr.io/gaolamthuy/gaolamthuy-helloworld:1.0.0
+            ghcr.io/gaolamthuy/gaolamthuy-helloworld:1.0.2
 
 # name: ci
 
